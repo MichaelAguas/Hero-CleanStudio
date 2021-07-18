@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header {
+  min-width: 1024px;
+  max-width: 1200px;
+  height: 100vh;
+  /* No genera scroll vertical */
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+  height: 25;
+  padding: 10px 40px 0px 40px;
+  align-items: center;
+  display: flex;
+  /* Se aplica en elementos padres */
+  justify-content: space-between;
+}
+.nav h1 {
+  color: #3F69FF;
+  font-size: 2.2rem;
+}
+.nav__list {
+  width: 421px;
+  display: flex;
+  justify-content: space-around;
+}
+.nav__list li {
+  list-style: none;
+}
+.nav__list li a {
+  text-decoration: color;
+  color: #000;
+  font-size: 1.6rem;
+}
+.nav .icon {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.hero {
+  width: 100%;
+  height: 620px;
+  margin: 50px 0px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero__text {
+  height: 460px;
+  width: 360px;
+  justify-self: center;
+  align-self: center;
+}
+.hero__text h2 {
+  color: #000;
+  font-size: 5rem;
+}
+.hero__text h2 span {
+  color: #3F69FF;
+}
+.hero__text p {
+  width: 292px;
+  height: 120px;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: #000;
+}
+.hero__text .bottom--container {
+  width: 215px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__text .bottom--container .bottom__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;
+  height: 44px;
+  background-color: #F7F7F7;
+  text-align: center;
+  border-radius: 22px;
+  font-size: 1rem;
+}
+.hero__text .bottom--container .search {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  background-color: #3F69FF;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #F7F7F7;
+  -webkit-box-shadow: 0px 0px 9px -1px #3f69ff;
+  -moz-box-shadow: 0px 0px 9px -1px #3f69ff;
+  box-shadow: 0px 0px 9px -1px #3f69ff;
+  border-radius: 50%;
+  margin: 0px 0px 0px 10px;
+}
+.hero__grid {
+  height: 546px;
+  width: 738px;
+  display: grid;
+  grid-template-columns: repeat(4, 114px) 178px;
+  grid-template-rows: repeat(4, 130px);
+  gap: 5px;
+}
+.hero__grid .one {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.hero__grid .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #9EFFD1;
+  align-self: flex-end;
+}
+.hero__grid .two {
+  grid-column: 2/3;
+  grid-row: 2/5;
+}
+.hero__grid .three {
+  grid-column: 3/4;
+}
+.hero__grid .four {
+  align-self: center;
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.hero__grid .five {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+.hero__grid .six {
+  grid-column: 4/5;
+}
+.hero__grid .seven {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.hero__grid .eight {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  align-self: center;
+}
+.hero__grid .nine {
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+.hero__grid .ten {
+  grid-column: 5/6;
+  grid-row: 1/2;
+}
+.hero__grid .eleven {
+  align-self: flex-end;
+  grid-column: 5/6;
+  grid-row: 2/5;
+}
